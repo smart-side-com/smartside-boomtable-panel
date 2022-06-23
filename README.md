@@ -1,7 +1,7 @@
 # Boom Table Panel for Grafana
 
-[![Build](https://github.com/yesoreyeram/yesoreyeram-boomtable-panel/workflows/Test%20&%20Build/badge.svg)](https://github.com/yesoreyeram/yesoreyeram-boomtable-panel/actions?query=workflow%3A%22Build+%26+Publish%22)
-[![Release](https://github.com/yesoreyeram/yesoreyeram-boomtable-panel/workflows/Release/badge.svg)](https://github.com/yesoreyeram/yesoreyeram-boomtable-panel/actions?query=workflow%3ARelease)
+[![Build](https://github.com/smart-side-com/smartside-boomtable-panel/workflows/Test%20&%20Build/badge.svg)](https://github.com/smart-side-com/smartside-boomtable-panel/actions?query=workflow%3A%22Build+%26+Publish%22)
+[![Release](https://github.com/smart-side-com/smartside-boomtable-panel/workflows/Release/badge.svg)](https://github.com/smart-side-com/smartside-boomtable-panel/actions?query=workflow%3ARelease)
 
 
 Boom Table Panel for Grafana. Table/MultiStat plugin with multiple columns for Graphite, InfluxDB, Prometheus, Azure Monitor.
@@ -24,7 +24,7 @@ Features :
 * Row/Column name based on multiple graphite/InfluxDB/Prometheus columns
 * Filter metrics
 * Debug UI to test patterns
-* Signed and published at [grafana.com/plugins](https://grafana.com/grafana/plugins/yesoreyeram-boomtable-panel)
+* Signed and published at [grafana.com/plugins](https://grafana.com/grafana/plugins/smartside-boomtable-panel)
 
 Supported / Tested Data Sources :
 --------------------------------
@@ -151,7 +151,7 @@ Following notations should be followed when added time based threshold rule
 
 **Threshold** : Same format as default threshold
 
-![Time based thresholds](https://raw.githubusercontent.com/yesoreyeram/yesoreyeram-boomtable-panel/master/dist/src/img/time-based-thresholds.png)
+![Time based thresholds](https://raw.githubusercontent.com/smartside/smartside-boomtable-panel/master/dist/src/img/time-based-thresholds.png)
 
 **WARNING**: "From" and "To" fields will be compared against timestamp of last data received from server. If the last data point is not available, then browser time will be considered.
 
@@ -288,7 +288,7 @@ First row link can have token `_row_name_` . Any other tokens will be ignored. I
 
 Example : `http://google.com?q=_row_name_` will be replaced as `http://google.com?q=app_0` if the first column name is `app_0`
 
-Refer issue [#85](https://github.com/yesoreyeram/yesoreyeram-boomtable-panel/issues/85) for more details
+Refer issue [#85](https://github.com/smart-side-com/smartside-boomtable-panel/issues/85) for more details
 
 Filter
 ------
@@ -299,7 +299,7 @@ If your output have more rows and if you require to hide certain rows based on t
 Repeater / Multistat Example
 -----------------
 
-You can use the boom table as multi stat panel. Refer the details given in issue [#40](https://github.com/yesoreyeram/yesoreyeram-boomtable-panel/issues/40)
+You can use the boom table as multi stat panel. Refer the details given in issue [#40](https://github.com/smart-side-com/smartside-boomtable-panel/issues/40)
 
 Using Font Awesome icons in row /column / metric fields
 -------------------------------------------------------
@@ -397,25 +397,25 @@ There are multiple ways to install this plugin into your grafana instance
 
 ### Download and extract zip file
 
-Download the latest zip file from [github](https://github.com/yesoreyeram/yesoreyeram-boomtable-panel/releases) and extract into your grafana plugin folder. Then restart Grafana.
+Download the latest zip file from [github](https://github.com/smart-side-com/smartside-boomtable-panel/releases) and extract into your grafana plugin folder. Then restart Grafana.
 
 ### Using grafana-cli
 
 If you are using grafana-cli, execute the following command to install the plugin
 
 ```sh
-grafana-cli plugins install yesoreyeram-boomtable-panel
+grafana-cli plugins install smartside-boomtable-panel
 ```
 or
 
 ```sh
-grafana-cli --pluginUrl <ZIP_FILE_URL> plugins install yesoreyeram-boomtable-panel
+grafana-cli --pluginUrl <ZIP_FILE_URL> plugins install smartside-boomtable-panel
 ```
 
 Example:
 
 ```sh
-grafana-cli --pluginUrl https://github.com/yesoreyeram/yesoreyeram-boomtable-panel/releases/download/v1.5.0-alpha.2/yesoreyeram-boomtable-panel-1.5.0-alpha.2.zip plugins install yesoreyeram-boomtable-panel
+grafana-cli --pluginUrl https://github.com/smart-side-com/smartside-boomtable-panel/releases/download/v1.5.0-alpha.2/smartside-boomtable-panel-1.5.0-alpha.2.zip plugins install smartside-boomtable-panel
 ```
 
 ### Using helm chart
@@ -424,19 +424,19 @@ If you use helm chart to provision grafana, use the following config to install 
 
 ```yml
 plugins:
-  - yesoreyeram-boomtable-panel
+  - smartside-boomtable-panel
 ```
 
 or if you need specific version, then use the following
 
 ```yml
 plugins:
-  - <ZIP_FILE_URL>;yesoreyeram-boomtable-panel
+  - <ZIP_FILE_URL>;smartside-boomtable-panel
 ```
 
 Example:
 
 ```yml
 plugins:
-  - https://github.com/yesoreyeram/yesoreyeram-boomtable-panel/releases/download/v1.5.0-alpha.2/yesoreyeram-boomtable-panel-1.5.0-alpha.2.zip;yesoreyeram-boomtable-panel
+  - https://github.com/smart-side-com/smartside-boomtable-panel/releases/download/v1.5.0-alpha.2/smartside-boomtable-panel-1.5.0-alpha.2.zip;smartside-boomtable-panel
 ```

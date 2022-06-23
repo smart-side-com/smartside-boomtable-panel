@@ -1,5 +1,5 @@
 {
-  "name": "yesoreyeram-boomtable-panel",
+  "name": "smartside-boomtable-panel",
   "version": "1.5.0-alpha.3",
   "description": "Boom table panel for Graphite, InfluxDB, Prometheus",
   "main": "dist/module.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yesoreyeram/yesoreyeram-boomtable-panel.git"
+    "url": "git+https://github.com/smart-side-com/smartside-boomtable-panel.git"
   },
   "keywords": [
     "grafana",
@@ -26,9 +26,9 @@
   "author": "Sriramajeyam Sugumaran",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/yesoreyeram/yesoreyeram-boomtable-panel/issues"
+    "url": "https://github.com/smart-side-com/smartside-boomtable-panel/issues"
   },
-  "homepage": "https://github.com/yesoreyeram/yesoreyeram-boomtable-panel#readme",
+  "homepage": "https://github.com/smart-side-com/smartside-boomtable-panel#readme",
   "devDependencies": {
     "@types/jest": "^23.3.10",
     "@types/lodash": "^4.14.119",

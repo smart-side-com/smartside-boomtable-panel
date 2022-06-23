@@ -1,4 +1,4 @@
-const plugin_id = 'yesoreyeram-boomtable-panel';
+const plugin_id = 'smartside-boomtable-panel';
 const value_name_options = [
   { text: 'Min', value: 'min' },
   { text: 'Max', value: 'max' },

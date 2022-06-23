@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/grafana/grafana/master/docs/sources/developers/plugins/plugin.schema.json",
   "type": "panel",
   "name": "Boom Table",
-  "id": "yesoreyeram-boomtable-panel",
+  "id": "smartside-boomtable-panel",
   "info": {
     "description": "Boom table panel for Graphite, InfluxDB, Prometheus",
     "author": {
@@ -23,7 +23,7 @@
     "links": [
       {
         "name": "Github",
-        "url": "https://github.com/yesoreyeram/yesoreyeram-boomtable-panel"
+        "url": "https://github.com/smart-side-com/smartside-boomtable-panel"
       }
     ],
     "version": "1.5.0-alpha.3",
